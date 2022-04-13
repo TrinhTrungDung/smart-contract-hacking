@@ -1,0 +1,40 @@
+{
+  "name": "smart-contract-hacking",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": {
+    "packages": [
+      "ethernaut"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "test:ethernaut": "cd ethernaut/contracts && hardhat test",
+    "compile:ethernaut": "cd ethernaut/contracts && hardhat clean && npx hardhat compile",
+    "network": "cd ethernaut/contracts && hardhat node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrinhTrungDung/smart-contract-hacking.git"
+  },
+  "keywords": [
+    "smart-contracts",
+    "hack"
+  ],
+  "author": "Bruce Trinh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrinhTrungDung/smart-contract-hacking/issues"
+  },
+  "homepage": "https://github.com/TrinhTrungDung/smart-contract-hacking#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.0.0",
+    "@truffle/hdwallet-provider": "^2.0.5"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-truffle5": "^2.0.5",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "hardhat": "^2.9.3",
+    "web3": "^1.7.3"
+  }
+}
